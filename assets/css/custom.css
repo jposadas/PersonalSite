@@ -58,3 +58,15 @@ footer:hover {
     opacity: 1.0;
     cursor: pointer;
 }
+
+/*===============*/
+/*       Media Queries         */
+/*===============*/
+
+@media (min-width: 768px) { 
+	
+	.navbar-nav {
+		float: right;
+	}
+
+}
