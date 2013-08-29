@@ -1,8 +1,89 @@
+body {
+	font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #333333;
+}
 
+/*=========================*/
+/*      Header Section     */
+/*=========================*/
+
+.navbar > .container .navbar-brand {
+	font-family: 'Megrim', cursive;
+	font-size: 2em;
+	color: #ADEE1D;
+}
+
+/*=========================*/
+/*      Body Section       */
+/*=========================*/
+
+.main-content {
+	color: #FFFFFF;
+	padding: 100px 0;
+}
+
+.main-content h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	padding: 200px 0;
+	margin: 0;
+	font-size: 7em;
+}
+
+.rw-wrapper {
+	position: relative;
+}
+
+.rw-words {
+	display: inline;
+}
+
+.rw-words span {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+@-webkit-keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0; }
+    8% { opacity: 1; height: 160px; }
+    19% { opacity: 0; height: 160px; }
+    25% { opacity: 0; height: 160px; }
+    100% { opacity: 0; }
+}
+
+.rw-words span{
+    -webkit-animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words span:nth-child(1) { 
+    -webkit-animation-delay: 0s; 
+    color: #4b882d;
+}
+.rw-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    color: #6b739d; 
+}
+.rw-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    color: #7a6b9d;
+}
+.rw-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    color: #8d6b9d;
+}
+.rw-words span:nth-child(6) {  
+    -webkit-animation-delay: 15s; 
+    color: #9b6b9d;
+}
 
 
 /*=========================*/
-/* CSS for footer sections */
+/*      Footer Section     */
 /*=========================*/
 
 footer {
@@ -24,7 +105,7 @@ footer:hover {
 	color: #8E8E8E;
 }
 
-.footer {
+.footer-container {
 	max-width: 1170px;
 	width: 90%;
 	margin: 0 auto;
@@ -59,14 +140,22 @@ footer:hover {
     cursor: pointer;
 }
 
-/*===============*/
-/*       Media Queries         */
-/*===============*/
+/*=========================*/
+/*      Media Queries      */
+/*=========================*/
 
 @media (min-width: 768px) { 
 	
 	.navbar-nav {
 		float: right;
+	}
+
+	.navbar > .container .navbar-brand {
+		font-size: 2.5em;
+	}
+
+	.main-content h1 {
+		font-size: 10em;
 	}
 
 }

@@ -29,3 +29,12 @@ $(document).ready(function () {
 	});
 
 });
+
+// Generate Random color from brand_colors array
+$(document).ready(function () {
+
+	var brand_colors = ["ADEE1D", "02B0F0", "FF358B", "FF6900"];
+	var random_index = Math.floor(Math.random() * brand_colors.length);
+	$('.navbar > .container .navbar-brand').css('color', '#' + brand_colors[random_index]);
+	
+});
