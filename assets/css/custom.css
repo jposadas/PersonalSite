@@ -7,6 +7,11 @@ body {
 /*      Header Section     */
 /*=========================*/
 
+.navbar-inverse {
+	background-color: #060606;
+	border-color: #BCBCBC;
+}
+
 .navbar > .container .navbar-brand {
 	font-family: 'Megrim', cursive;
 	font-size: 2em;
